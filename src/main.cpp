@@ -1,6 +1,6 @@
 #include "task_1.h"
 int main() {
-    /*cout<<"Task 1"<<endl;
+    cout<<"Task 1"<<endl;
     Stack first;
     first.push(5);
     first.push(6);
@@ -23,7 +23,7 @@ int main() {
             else break;
         }
     }
-    if (cars.size() !=0){cout<<0<<endl;}*/
+    if (cars.size() !=0){cout<<0<<endl;}
     cout<<"Task 3"<<endl;
     Stack values;
     string postfix = "";
