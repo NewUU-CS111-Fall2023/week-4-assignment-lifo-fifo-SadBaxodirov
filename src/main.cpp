@@ -1,6 +1,6 @@
 #include "task_1.h"
 int main() {
-    cout<<"Task 1"<<endl;
+    /*cout<<"Task 1"<<endl;
     Stack first;
     first.push(5);
     first.push(6);
@@ -23,9 +23,41 @@ int main() {
             else break;
         }
     }
-    if (cars.size() !=0){cout<<0<<endl;}
+    if (cars.size() !=0){cout<<0<<endl;}*/
     cout<<"Task 3"<<endl;
+    Stack values;
+    string postfix = "";
+    cout<<"Enter the expression:";
+    getline(cin, postfix);
+    int value = 0;
+    int number1 = 0;
+    int number2 = 0;
+    int result = 0;
+    for (int i=0;i<postfix.size();i++){
+        if (postfix[i] == '+'){
+            number1 = values.pop();
+            number2 = values.pop();
+            result = number1+number2;
+            values.push(result);
+        } else if (postfix[i] == '-'){
+            number1 = values.pop();
+            number2 = values.pop();
+            result = number1-number2;
+            values.push(result);
+        } else if (postfix[i] == '*'){
+            number1 = values.pop();
+            number2 = values.pop();
+            result = number1*number2;
+            values.push(result);
+        } else if (postfix[i] == ' '){
 
+        } else {
+            value = postfix[i] - '0';
+            cout<<value<<endl;
+            values.push(value);
+        }
+    }
+    cout<<"The result is "<<values.top()<<endl;
     cout<<"Task 4"<<endl;
     return 0;
 }
