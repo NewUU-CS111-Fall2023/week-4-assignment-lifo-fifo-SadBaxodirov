@@ -1,5 +1,6 @@
 #include "task_1.h"
 int main() {
+    cout<<"Task 1"<<endl;
     Stack first;
     first.push(5);
     first.push(6);
@@ -7,7 +8,7 @@ int main() {
     cout<<"The top value is "<<first.top()<<endl;
     first.pop();
     cout<<"The top value is "<<first.top()<<endl;
-    cout<<"Task 2";
+    cout<<"Task 2"<<endl;
     Stack cars;
     int amount_n;
     cin >> amount_n;
@@ -23,5 +24,8 @@ int main() {
         }
     }
     if (cars.size() !=0){cout<<0<<endl;}
+    cout<<"Task 3"<<endl;
+
+    cout<<"Task 4"<<endl;
     return 0;
 }
